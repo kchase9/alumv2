@@ -1,0 +1,7 @@
+<app-edit-degree-list
+*ngFor="let degree of currAccount.degrees"
+[id]="currAccount.id"
+(delDegree)="deleteDegree($event)"> 
+</app-edit-degree-list>
+
+<button class="btn btn-primary" routerLink="add-degree">Add Degree</button>

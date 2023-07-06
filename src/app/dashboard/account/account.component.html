@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="col-xs-12">
+        <div class="row">
+            <div class="col-4">
+                <app-profile-preview
+                [currAccount]="currAccount"></app-profile-preview>
+            </div>
+            <div class="col-8">
+                <app-profile-details 
+                [currAccount]="currAccount"></app-profile-details>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <app-bio [currAccount]="currAccount"></app-bio>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-xs-12">
+                <app-schooling                
+                [currAccount]="currAccount"></app-schooling>
+            </div>
+
+        </div>
+        <button class="btn btn-primary">Edit Account</button>
+        <button class="btn btn-danger">Delete Account</button>
+    </div>
+</div>
+
+
+<router-outlet></router-outlet>

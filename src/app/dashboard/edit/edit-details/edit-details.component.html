@@ -1,0 +1,31 @@
+<div class="container"> 
+    <div class="col-xs-12">
+        <div class="row">
+            <p>{{currAccount.sex}}</p>
+        </div>
+        <div>
+            <label for="DOB">Date of Birth (DD/MM/YYY):</label>
+            <div class="row">
+                <input #DOB type="Date" placeholder="{{currAccount.dob}}">
+            </div>
+        </div>
+        <div class="row">
+            <label for="email">Email</label>
+            <input #email type="email" placeholder="{{currAccount.email}}">
+        </div>
+        <div class="row">
+            <label for="address">Address</label>
+            <div #address>
+                <input type="text" placeholder="Address Line 1">
+                <input type="text" placeholder="Address Line 2">
+                <input type="text" placeholder="City">
+                <input type="text" placeholder="Zip Code">
+                <input type="text" placeholder="Country">
+            </div>
+        </div>
+        <div class="row">
+            <label for="jobTitle">Job Title</label>
+            <input #email type="email" placeholder="{{currAccount.jobTitle}}">
+        </div>
+    </div>
+</div>

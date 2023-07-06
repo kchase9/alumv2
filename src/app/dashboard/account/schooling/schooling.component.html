@@ -1,0 +1,21 @@
+<div class="container" style="cursor: pointer;" >
+    <div class="row">
+        <div class="col-8">
+            <app-degree-item  
+            *ngFor="let degree of currAccount.enrollment" 
+            [currDegree]="degree"
+            (click)="showDegree=!showDegree"
+            (degreeClicked)="displayData($event)">        
+            </app-degree-item>
+
+        </div>
+        <div class="col-4">
+            <app-degree-details 
+            *ngIf="showDegree"
+            [currDegree]="seeDegree">
+            </app-degree-details>
+        </div>
+        <a style="cursor: pointer;">Edit Information</a>
+    </div>
+</div>
+
